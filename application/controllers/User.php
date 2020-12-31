@@ -1,24 +1,24 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Ci_Default extends CI_Controller {
+class User extends CI_Controller {
 
 	/**
-	 * Default Controller
-	 * inital pages
+	 * User Controller
+	 * user modules
 	 */
 
 	public function index()
 	{
-		$array['msg'] = 'Hi Sazal from CodeIgniter 3';
-
+        $array['msg'] = 'Hi Sazal(USER) from CodeIgniter 3';
+		
 		$this->load->view('layouts/header');
 		$this->load->view('index', $array);
 		$this->load->view('layouts/footer');
 	}
-	public function test()
+	public function testu()
 	{
-        $array['msg'] = 'Hi Sazal from CodeIgniter 3';
+        $array['msg'] = 'Hi Sazal(USER-T) from CodeIgniter 3';
 		
 		$this->load->view('layouts/header');
 		$this->load->view('index', $array);

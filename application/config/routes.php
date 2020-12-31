@@ -58,3 +58,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'ci_default';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+// route start ...
+$route['test']['GET'] = 'ci_default/test';
+$route['user']['GET'] = 'user';
+$route['testu']['GET'] = 'user/testu';
