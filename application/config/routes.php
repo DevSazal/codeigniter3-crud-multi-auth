@@ -61,5 +61,8 @@ $route['translate_uri_dashes'] = FALSE;
 
 // route start ...
 $route['test']['GET'] = 'ci_default/test';
-$route['user']['GET'] = 'user';
-$route['testu']['GET'] = 'user/testu';
+$route['login']['GET'] = 'user';
+$route['login']['POST'] = 'user/login';
+$route['register']['GET'] = 'user/registerPage';
+$route['register']['POST'] = 'user/register';
+$route['logout']['GET'] = 'user/logout';
